@@ -18,7 +18,7 @@
 <meta property="og:description" content="Position 的 relative 和 absolute 分别是相对谁定位⚫ absolute:生成绝对定位的元素，相对于最近一级不是 static 的父元素来进行定位。⚫ fixed(老 IE 不支持)生成绝对定位的元素，通常相对于浏览器窗口或 frame 进行定位。⚫ relative 生成相对定位的元素，相对于其在普通流中的位置进行定位。⚫ static 默认值。没有定位，元素出现在正常">
 <meta property="og:locale" content="ch_CN">
 <meta property="article:published_time" content="2021-05-25T15:03:50.000Z">
-<meta property="article:modified_time" content="2021-05-25T15:56:00.461Z">
+<meta property="article:modified_time" content="2021-05-25T16:00:53.190Z">
 <meta property="article:author" content="Mr.Cen">
 <meta name="twitter:card" content="summary">
   
@@ -539,6 +539,7 @@
   <div class="article-entry" itemprop="articleBody">
     
     <h2 id="Position-的-relative-和-absolute-分别是相对谁定位"><a href="#Position-的-relative-和-absolute-分别是相对谁定位" class="headerlink" title="Position 的 relative 和 absolute 分别是相对谁定位"></a>Position 的 relative 和 absolute 分别是相对谁定位</h2><p>⚫ absolute:生成绝对定位的元素，相对于最近一级不是 static 的父元素来进行定位。<br>⚫ fixed(老 IE 不支持)生成绝对定位的元素，通常相对于浏览器窗口或 frame 进行定位。<br>⚫ relative 生成相对定位的元素，相对于其在普通流中的位置进行定位。<br>⚫ static 默认值。没有定位，元素出现在正常的流中<br>⚫ sticky 生成粘性定位的元素，容器的位置根据正常文档流计算得出</p>
+<span id="more"></span>
 <h2 id="如何解决不同浏览器的样式兼容性问题？"><a href="#如何解决不同浏览器的样式兼容性问题？" class="headerlink" title="如何解决不同浏览器的样式兼容性问题？"></a>如何解决不同浏览器的样式兼容性问题？</h2><p>⚫ 在确定问题原因和有问题的浏览器后，使用单独的样式表，仅供出现问题的浏览器加载。这种方法需要使用服务器端渲染。<br>⚫ 使用已经处理好此类问题的库，比如 Bootstrap。<br>⚫ 使用 autoprefixer 自动生成 CSS 属性前缀。<br>⚫ 使用 Reset CSS 或 Normalize.css。</p>
 <h2 id="em-px-rem-的区别"><a href="#em-px-rem-的区别" class="headerlink" title="em px rem 的区别"></a>em px rem 的区别</h2><p>⚫ px：绝对单位，⻚⾯按精确像素展示。<br>⚫ em：相对单位，基准点为⽗节点字体的⼤⼩，如果⾃身定义了 font-size 按⾃身来计算（浏览器默认字体是 16px），整个⻚⾯内 1em 不是⼀个固定的值。<br>⚫ rem：相对单位,相对根节点 html 的字体⼤⼩font-size 来计算，CSS3 新加属性</p>
 <h2 id="移动端开发时，一般怎么实现自适应"><a href="#移动端开发时，一般怎么实现自适应" class="headerlink" title="移动端开发时，一般怎么实现自适应?"></a>移动端开发时，一般怎么实现自适应?</h2><p>⚫ rem:根据 html 的 font-size 计算<br>⚫ vw 和 vh：vw 是浏览器窗口宽度，vh 是浏览器窗口高度<br>⚫ 媒体查询（bootstrap）：根据浏览器窗口宽度或高度进行响应式选择显示哪个 CSS</p>
